@@ -1,355 +1,154 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PeptideStack — Privacy Policy / Datenschutzerklärung</title>
-  <style>
-    :root {
-      --bg: #0d1418;
-      --surface: #161e23;
-      --primary: #4dd4d4;
-      --text: #e8eef1;
-      --muted: #9aa9b2;
-      --border: #243038;
-    }
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      font-size: 16px;
-    }
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 32px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-    }
-    header h1 {
-      font-size: 28px;
-      margin: 0 0 8px;
-      letter-spacing: -0.5px;
-    }
-    header p { color: var(--muted); margin: 0; font-size: 14px; }
-    .lang-toggle {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 16px;
-    }
-    .lang-toggle a {
-      color: var(--primary);
-      text-decoration: none;
-      padding: 6px 14px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 600;
-    }
-    h2 {
-      color: var(--primary);
-      margin-top: 32px;
-      margin-bottom: 8px;
-      font-size: 20px;
-      letter-spacing: -0.3px;
-    }
-    h3 {
-      font-size: 16px;
-      margin-top: 20px;
-      margin-bottom: 6px;
-    }
-    p, li { color: var(--text); }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 4px; }
-    a { color: var(--primary); }
-    code {
-      background: var(--surface);
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 0.9em;
-    }
-    .meta {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 12px 16px;
-      margin: 16px 0;
-      font-size: 14px;
-      color: var(--muted);
-    }
-    section { padding-top: 16px; }
-    .lang-section { display: none; }
-    .lang-section.active { display: block; }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --surface: #f5f7f8;
-        --primary: #009999;
-        --text: #1a2226;
-        --muted: #5d6c75;
-        --border: #e1e6e9;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>PeptideStack</h1>
-      <p>Privacy Policy · Datenschutzerklärung</p>
-      <div class="lang-toggle">
-        <a href="#en" onclick="showLang('en')">English</a>
-        <a href="#de" onclick="showLang('de')">Deutsch</a>
-      </div>
-      <p class="meta" style="margin-top: 16px;">Last updated · Zuletzt aktualisiert: 28 April 2026</p>
-    </header>
+Last updated: 30 September 2026
 
-    <!-- ENGLISH -->
-    <section id="en" class="lang-section active">
-      <h2>1. Who we are</h2>
-      <p>
-        PeptideStack ("the App", "we", "us") is an educational tracking journal
-        that lets you log peptides you take, dosages, frequency, and notes —
-        for personal reference only. The App does not provide medical advice,
-        does not source any substance, and does not recommend any protocol.
-      </p>
-      <p>
-        Operator: Enes Koç, Esslingen, Germany.<br>
-        Contact for privacy questions: <a href="mailto:enesskocc5@gmail.com">enesskocc5@gmail.com</a>
-      </p>
+1. Who we are
 
-      <h2>2. What data we collect</h2>
-      <p>We only collect data you actively provide:</p>
-      <ul>
-        <li><strong>Account:</strong> email address and a hashed password (handled by Supabase Auth — we never see your plaintext password).</li>
-        <li><strong>Profile:</strong> optional display name, language preference, onboarding answers (goals, experience level).</li>
-        <li><strong>Your peptide stack:</strong> peptide name (from our public catalog), dosage, frequency, personal notes you choose to add.</li>
-        <li><strong>Dose log entries:</strong> timestamp, dose taken, optional notes you write.</li>
-        <li><strong>Subscription state:</strong> whether you have an active premium entitlement, the product identifier, and expiration date — synced from RevenueCat. We do <em>not</em> store payment information; that stays with Apple.</li>
-        <li><strong>Account lifecycle:</strong> account creation date and, if you request deletion, the deletion-requested timestamp.</li>
-      </ul>
-      <p>
-        We do <strong>not</strong> use third-party analytics (no Firebase
-        Analytics, no Google Analytics, no Mixpanel). We do <strong>not</strong>
-        show ads. We do <strong>not</strong> integrate Apple HealthKit. We do
-        <strong>not</strong> access your contacts, location, photos, microphone,
-        or camera.
-      </p>
+PeptideStack ("the App", "we", "us") is an educational tracking journal that lets you log peptides you take, dosages, frequency, and notes — for personal reference only. The App does not provide medical advice, does not source any substance, and does not recommend any protocol.
 
-      <h2>3. How we use your data</h2>
-      <ul>
-        <li>To authenticate you and keep your stack in sync across devices.</li>
-        <li>To gate access to premium features based on your subscription state.</li>
-        <li>To honour App Store and GDPR rights (access, deletion).</li>
-      </ul>
-      <p>We do not sell, rent, or share your data with marketers.</p>
+Operator: Enes Koç, Esslingen, Germany.
+Contact for privacy questions: enesskocc5@gmail.com
 
-      <h2>4. Where your data is stored</h2>
-      <p>
-        Personal data is stored in <strong>Supabase</strong> (Postgres database,
-        EU region — Frankfurt, Germany). Subscription state is processed by
-        <strong>RevenueCat</strong> (purchase metadata only; no personally
-        identifiable information beyond the user identifier we generate).
-        Payment processing is handled entirely by <strong>Apple</strong>.
-      </p>
+2. What data we collect
 
-      <h2>5. Third parties we rely on</h2>
-      <ul>
-        <li><strong>Supabase</strong> (Supabase Inc.) — database & authentication. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
-        <li><strong>RevenueCat</strong> (RevenueCat Inc.) — subscription state management. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
-        <li><strong>Apple</strong> — App Store distribution and in-app purchase processing. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
-      </ul>
+We only collect data you actively provide:
 
-      <h2>6. Your rights (GDPR)</h2>
-      <p>If you are in the EU/EEA you have the right to:</p>
-      <ul>
-        <li>Access the personal data we hold about you.</li>
-        <li>Request correction of inaccurate data.</li>
-        <li>Request deletion of your account and data ("right to be forgotten").</li>
-        <li>Receive an export of your data in a machine-readable format.</li>
-        <li>Object to or restrict processing.</li>
-        <li>Lodge a complaint with your supervisory authority.</li>
-      </ul>
-      <p>
-        You can exercise the deletion right at any time from inside the app:
-        <strong>Settings → Delete Account</strong>. Your account is
-        deactivated immediately and signs you out. After 30 days, all of your
-        personal data is permanently and irreversibly purged from our
-        database. If you sign in within those 30 days, you can restore the
-        account.
-      </p>
-      <p>
-        For any other request, write to the contact email above. We respond
-        within 30 days.
-      </p>
+- Account: email address and a hashed password (handled by Supabase Auth — we never see your plaintext password).
+- Profile: optional display name, language preference, onboarding answers (goals, experience level).
+- Your peptide stack: peptide name (from our public catalog), dosage, frequency, personal notes you choose to add.
+- Dose log entries: timestamp, dose taken, optional notes you write.
+- Progress measurements: your body weight, and your own 1-5 ratings for sleep, energy and recovery, each attached to a calendar date, plus an optional note you write.
+- Vial records: the vial strength in milligrams, the amount of bacteriostatic water you entered, the date you opened the vial, and the discard-after period you chose.
+- Cycle records: a cycle start date, the number of weeks on, and the number of weeks off.
+- Reminder settings: the time of day and the weekdays you chose for each dose reminder. Reminders are scheduled locally on your iPhone by iOS — we do not operate a push notification server and we do not collect a push notification token.
+- Subscription state: whether you have an active premium entitlement, the product identifier, and expiration date — synced from RevenueCat. We do not store payment information; that stays with Apple.
+- Account lifecycle: account creation date and, if you request deletion, the deletion-requested timestamp.
 
-      <h2>7. Data retention</h2>
-      <p>
-        We keep your data for as long as your account is active. After you
-        request deletion, data is purged within 30 days (the grace window
-        gives you a chance to recover the account). Backups are rotated on a
-        rolling 7-day window and contain no separately retrievable copy of
-        purged data.
-      </p>
+Everything above is information you type in yourself. We do not use third-party analytics (no Firebase Analytics, no Google Analytics, no Mixpanel). We do not show ads. We do not integrate Apple HealthKit and we do not read anything from your device's Health app. We do not access your contacts, location, photos, microphone, or camera.
 
-      <h2>8. Children</h2>
-      <p>
-        PeptideStack is not directed to children under 18. We do not knowingly
-        collect data from minors. If you believe a minor has registered,
-        contact us and we will delete the account.
-      </p>
+3. How we use your data
 
-      <h2>9. Changes to this policy</h2>
-      <p>
-        We may update this policy as the App evolves. Material changes will
-        be announced inside the App and reflected in the "Last updated" date
-        at the top of this page.
-      </p>
+- To authenticate you and keep your stack in sync across devices.
+- To gate access to premium features based on your subscription state.
+- To draw your progress charts and to work out how much is left in an open vial.
+- To honour App Store and GDPR rights (access, deletion).
 
-      <h2>10. Contact</h2>
-      <p>
-        Privacy questions: <a href="mailto:enesskocc5@gmail.com">enesskocc5@gmail.com</a><br>
-        Operator address: Enes Koç, Esslingen, Germany.
-      </p>
-    </section>
+We do not sell, rent, or share your data with marketers.
 
-    <!-- DEUTSCH -->
-    <section id="de" class="lang-section">
-      <h2>1. Wer wir sind</h2>
-      <p>
-        PeptideStack („die App", „wir", „uns") ist ein edukatives
-        Tracking-Tagebuch, in dem du eingenommene Peptide, Dosierungen,
-        Häufigkeit und Notizen festhalten kannst — ausschließlich zur
-        persönlichen Referenz. Die App ist keine medizinische Beratung,
-        vermittelt keine Substanzen und empfiehlt kein Protokoll.
-      </p>
-      <p>
-        Betreiber: Enes Koç, Esslingen, Deutschland.<br>
-        Kontakt für Datenschutzfragen: <a href="mailto:enesskocc5@gmail.com">enesskocc5@gmail.com</a>
-      </p>
+4. Where your data is stored
 
-      <h2>2. Welche Daten wir erheben</h2>
-      <p>Wir erheben nur Daten, die du aktiv eingibst:</p>
-      <ul>
-        <li><strong>Konto:</strong> E-Mail-Adresse und ein gehashtes Passwort (Supabase Auth — wir sehen dein Passwort nie im Klartext).</li>
-        <li><strong>Profil:</strong> optionaler Anzeigename, Spracheinstellung, Onboarding-Antworten (Ziele, Erfahrungslevel).</li>
-        <li><strong>Dein Peptid-Stack:</strong> Peptidname (aus unserem öffentlichen Katalog), Dosis, Häufigkeit, persönliche Notizen.</li>
-        <li><strong>Dosis-Log-Einträge:</strong> Zeitstempel, eingenommene Dosis, optionale Notizen.</li>
-        <li><strong>Abostatus:</strong> ob ein aktives Premium-Recht besteht, Produkt-ID, Ablaufdatum — synchronisiert von RevenueCat. Wir speichern <em>keine</em> Zahlungsinformationen; diese verbleiben bei Apple.</li>
-        <li><strong>Konto-Lebenszyklus:</strong> Erstellungsdatum sowie, falls Löschung beantragt, der Zeitstempel der Anfrage.</li>
-      </ul>
-      <p>
-        Wir nutzen <strong>keine</strong> Drittanbieter-Analyse (kein Firebase
-        Analytics, kein Google Analytics, kein Mixpanel). Wir zeigen
-        <strong>keine</strong> Werbung. Wir integrieren <strong>nicht</strong>
-        Apple HealthKit. Wir greifen <strong>nicht</strong> auf Kontakte,
-        Standort, Fotos, Mikrofon oder Kamera zu.
-      </p>
+Personal data is stored in Supabase (Postgres database, EU region — Frankfurt, Germany), encrypted in transit and at rest, and readable only by you. Subscription state is processed by RevenueCat (purchase metadata only; no personally identifiable information beyond the user identifier we generate). Payment processing is handled entirely by Apple.
 
-      <h2>3. Wie wir deine Daten nutzen</h2>
-      <ul>
-        <li>Zur Authentifizierung und Synchronisierung deines Stacks zwischen Geräten.</li>
-        <li>Zur Freischaltung von Premium-Funktionen je nach Abostatus.</li>
-        <li>Zur Wahrung deiner Rechte aus DSGVO und App-Store-Vorgaben (Auskunft, Löschung).</li>
-      </ul>
-      <p>Wir verkaufen, vermieten oder geben deine Daten nicht an Dritte zu Marketingzwecken weiter.</p>
+5. Third parties we rely on
 
-      <h2>4. Wo deine Daten gespeichert werden</h2>
-      <p>
-        Personenbezogene Daten werden in <strong>Supabase</strong> (Postgres,
-        EU-Region — Frankfurt, Deutschland) gespeichert. Der Abostatus wird
-        von <strong>RevenueCat</strong> verarbeitet (nur Kauf-Metadaten;
-        keine personenbezogenen Daten über die von uns erzeugte
-        Nutzerkennung hinaus). Die Zahlungsabwicklung erfolgt
-        ausschließlich durch <strong>Apple</strong>.
-      </p>
+- Supabase (Supabase Inc.) — database & authentication. supabase.com/privacy
+- RevenueCat (RevenueCat Inc.) — subscription state management. revenuecat.com/privacy
+- Apple — App Store distribution and in-app purchase processing. apple.com/legal/privacy
 
-      <h2>5. Drittanbieter, auf die wir uns stützen</h2>
-      <ul>
-        <li><strong>Supabase</strong> (Supabase Inc.) — Datenbank und Authentifizierung. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
-        <li><strong>RevenueCat</strong> (RevenueCat Inc.) — Verwaltung des Abostatus. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
-        <li><strong>Apple</strong> — App-Store-Distribution und In-App-Käufe. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
-      </ul>
+6. Your rights (GDPR)
 
-      <h2>6. Deine Rechte (DSGVO)</h2>
-      <p>Wenn du in der EU/im EWR bist, hast du das Recht auf:</p>
-      <ul>
-        <li>Auskunft über die gespeicherten personenbezogenen Daten.</li>
-        <li>Berichtigung unrichtiger Daten.</li>
-        <li>Löschung deines Kontos und deiner Daten („Recht auf Vergessenwerden").</li>
-        <li>Datenübertragbarkeit in einem maschinenlesbaren Format.</li>
-        <li>Widerspruch oder Einschränkung der Verarbeitung.</li>
-        <li>Beschwerde bei der zuständigen Aufsichtsbehörde.</li>
-      </ul>
-      <p>
-        Das Löschungsrecht kannst du jederzeit in der App ausüben:
-        <strong>Einstellungen → Konto löschen</strong>. Dein Konto wird
-        sofort deaktiviert und du wirst ausgeloggt. Nach 30 Tagen werden
-        alle personenbezogenen Daten unwiderruflich aus unserer Datenbank
-        entfernt. Wenn du dich innerhalb dieser 30 Tage erneut anmeldest,
-        kannst du das Konto wiederherstellen.
-      </p>
-      <p>
-        Für andere Anliegen wende dich an die oben genannte Kontakt-E-Mail.
-        Wir antworten innerhalb von 30 Tagen.
-      </p>
+If you are in the EU/EEA you have the right to:
 
-      <h2>7. Speicherdauer</h2>
-      <p>
-        Wir speichern deine Daten, solange dein Konto aktiv ist. Nach einem
-        Löschantrag werden die Daten innerhalb von 30 Tagen entfernt (die
-        Wartezeit gibt dir die Möglichkeit, das Konto wiederherzustellen).
-        Backups rotieren in einem 7-Tage-Fenster und enthalten keine
-        separat wiederherstellbare Kopie gelöschter Daten.
-      </p>
+- Access the personal data we hold about you.
+- Request correction of inaccurate data.
+- Request deletion of your account and data ("right to be forgotten").
+- Receive an export of your data in a machine-readable format.
+- Object to or restrict processing.
+- Lodge a complaint with your supervisory authority.
 
-      <h2>8. Kinder</h2>
-      <p>
-        PeptideStack richtet sich nicht an Kinder unter 18 Jahren. Wir
-        erheben wissentlich keine Daten von Minderjährigen. Sollte sich
-        jemand unter 18 registriert haben, kontaktiere uns; wir löschen das
-        Konto.
-      </p>
+You can exercise the deletion right at any time from inside the app: Settings → Delete Account. Your account is deactivated immediately and signs you out. After 30 days, all of your personal data is permanently and irreversibly purged from our database. If you sign in within those 30 days, you can restore the account.
 
-      <h2>9. Änderungen dieser Erklärung</h2>
-      <p>
-        Wir können diese Erklärung im Zuge der App-Entwicklung anpassen.
-        Wesentliche Änderungen werden in der App angekündigt und in der
-        „Zuletzt aktualisiert"-Zeile oben auf dieser Seite vermerkt.
-      </p>
+For any other request, write to the contact email above. We respond within 30 days.
 
-      <h2>10. Kontakt</h2>
-      <p>
-        Datenschutzfragen: <a href="mailto:enesskocc5@gmail.com">enesskocc5@gmail.com</a><br>
-        Betreiber-Anschrift: Enes Koç, Esslingen, Deutschland.
-      </p>
-    </section>
-  </div>
+7. Data retention
 
-  <script>
-    // Simple language toggle. Defaults to browser language; falls back to EN.
-    function showLang(lang) {
-      document.querySelectorAll('.lang-section').forEach(function (el) {
-        el.classList.remove('active');
-      });
-      document.getElementById(lang).classList.add('active');
-      try { history.replaceState(null, '', '#' + lang); } catch (e) {}
-    }
-    (function () {
-      var hash = (location.hash || '').replace('#', '');
-      if (hash === 'en' || hash === 'de') { showLang(hash); return; }
-      var nav = (navigator.language || 'en').toLowerCase();
-      if (nav.indexOf('de') === 0) showLang('de');
-    })();
-  </script>
-</body>
-</html>
+We keep your data for as long as your account is active. After you request deletion, data is purged within 30 days (the grace window gives you a chance to recover the account). Backups are rotated on a rolling 7-day window and contain no separately retrievable copy of purged data.
+
+8. Children
+
+PeptideStack is not directed to children under 18. We do not knowingly collect data from minors. If you believe a minor has registered, contact us and we will delete the account.
+
+9. Changes to this policy
+
+We may update this policy as the App evolves. Material changes will be announced inside the App and reflected in the "Last updated" date at the top of this page.
+
+10. Contact
+
+Privacy questions: stack@gmail.com
+Operator address: Enes Koc, Esslingen, Germany.
+
+
+Zuletzt aktualisiert: 30. September 2026
+
+1. Wer wir sind
+
+PeptideStack („die App", „wir", „uns") ist ein edukatives Tracking-Tagebuch, in dem du eingenommene Peptide, Dosierungen, Häufigkeit und Notizen festhalten kannst — ausschließlich zur persönlichen Referenz. Die App gibt keine medizinische Beratung, vermittelt keine Substanzen und empfiehlt kein Protokoll.
+
+Betreiber: Enes Koç, Esslingen, Deutschland.
+Kontakt für Datenschutzfragen: enesskocc5@gmail.com
+
+2. Welche Daten wir erheben
+
+Wir erheben ausschließlich Daten, die du aktiv angibst:
+
+- Konto: E-Mail-Adresse und ein gehashtes Passwort (verwaltet von Supabase Auth — wir sehen dein Klartext-Passwort nie).
+- Profil: optionaler Anzeigename, Sprachauswahl, Antworten aus dem Onboarding (Ziele, Erfahrungsstand).
+- Dein Peptid-Stack: Peptid-Name (aus unserem öffentlichen Katalog), Dosierung, Häufigkeit und Notizen, die du selbst hinzufügst.
+- Dosis-Einträge: Zeitstempel, eingenommene Dosis und optionale Notizen, die du schreibst.
+- Fortschrittswerte: dein Körpergewicht sowie deine eigenen Bewertungen von 1 bis 5 für Schlaf, Energie und Erholung, jeweils mit Datum, plus eine optionale Notiz.
+- Vial-Angaben: die Stärke des Vials in Milligramm, die von dir eingegebene Menge bakteriostatisches Wasser, das Öffnungsdatum und die von dir gewählte Verwendungsdauer.
+- Zyklus-Angaben: Startdatum des Zyklus, Anzahl der Wochen mit Einnahme und Anzahl der Wochen Pause.
+- Erinnerungs-Einstellungen: die Uhrzeit und die Wochentage, die du für jede Dosis-Erinnerung gewählt hast. Erinnerungen werden lokal von iOS auf deinem iPhone geplant — wir betreiben keinen Push-Server und erheben kein Push-Token.
+- Abo-Status: ob du eine aktive Premium-Berechtigung hast, die Produkt-Kennung und das Ablaufdatum — synchronisiert von RevenueCat. Zahlungsdaten speichern wir nicht; die bleiben bei Apple.
+- Konto-Lebenszyklus: das Erstellungsdatum des Kontos und, falls du die Löschung beantragst, der Zeitpunkt dieses Antrags.
+
+All das sind Angaben, die du selbst einträgst. Wir nutzen keine Drittanbieter-Analyse (kein Firebase Analytics, kein Google Analytics, kein Mixpanel). Wir zeigen keine Werbung. Wir binden Apple HealthKit nicht ein und lesen nichts aus der Health-App deines Geräts. Wir greifen nicht auf deine Kontakte, deinen Standort, deine Fotos, dein Mikrofon oder deine Kamera zu.
+
+3. Wie wir deine Daten nutzen
+
+- Um dich zu authentifizieren und deinen Stack geräteübergreifend synchron zu halten.
+- Um den Zugang zu Premium-Funktionen anhand deines Abo-Status freizuschalten.
+- Um deine Verlaufsdiagramme zu zeichnen und zu berechnen, wie viel in einem geöffneten Vial übrig ist.
+- Um Rechte aus den App-Store-Vorgaben und der DSGVO zu erfüllen (Auskunft, Löschung).
+
+Wir verkaufen, vermieten oder geben deine Daten nicht an Dritte zu Marketingzwecken weiter.
+
+4. Wo deine Daten gespeichert werden
+
+Personenbezogene Daten werden in Supabase gespeichert (Postgres-Datenbank, EU-Region — Frankfurt, Deutschland), verschlüsselt bei der Übertragung und im Ruhezustand, und nur für dich lesbar. Der Abo-Status wird von RevenueCat verarbeitet (nur Kauf-Metadaten; keine personenbezogenen Daten über die von uns erzeugte Nutzerkennung hinaus). Die Zahlungsabwicklung erfolgt vollständig über Apple.
+
+5. Drittanbieter, auf die wir uns stützen
+
+- Supabase (Supabase Inc.) — Datenbank und Authentifizierung. supabase.com/privacy
+- RevenueCat (RevenueCat Inc.) — Verwaltung des Abo-Status. revenuecat.com/privacy
+- Apple — Vertrieb über den App Store und Abwicklung von In-App-Käufen. apple.com/legal/privacy
+
+6. Deine Rechte (DSGVO)
+
+Wenn du dich in der EU/im EWR befindest, hast du das Recht:
+
+- Auskunft über die zu dir gespeicherten personenbezogenen Daten zu erhalten.
+- Die Berichtigung unrichtiger Daten zu verlangen.
+- Die Löschung deines Kontos und deiner Daten zu verlangen („Recht auf Vergessenwerden").
+- Einen Export deiner Daten in einem maschinenlesbaren Format zu erhalten.
+- Der Verarbeitung zu widersprechen oder sie einschränken zu lassen.
+- Eine Beschwerde bei deiner Aufsichtsbehörde einzureichen.
+
+Das Löschrecht kannst du jederzeit in der App ausüben: Einstellungen → Konto löschen. Dein Konto wird sofort deaktiviert und du wirst abgemeldet. Nach 30 Tagen werden alle deine personenbezogenen Daten dauerhaft und unwiderruflich aus unserer Datenbank entfernt. Meldest du dich innerhalb dieser 30 Tage an, kannst du das Konto wiederherstellen.
+
+Für alle anderen Anliegen schreibe an die oben genannte Kontaktadresse. Wir antworten innerhalb von 30 Tagen.
+
+7. Speicherdauer
+
+Wir speichern deine Daten, solange dein Konto aktiv ist. Nach einem Löschantrag werden die Daten innerhalb von 30 Tagen entfernt (die Frist gibt dir die Möglichkeit, das Konto wiederherzustellen). Backups werden in einem rollierenden 7-Tage-Fenster rotiert und enthalten keine separat abrufbare Kopie gelöschter Daten.
+
+8. Kinder
+
+PeptideStack richtet sich nicht an Kinder unter 18 Jahren. Wir erheben wissentlich keine Daten von Minderjährigen. Wenn du glaubst, dass sich eine minderjährige Person registriert hat, kontaktiere uns und wir löschen das Konto.
+
+9. Änderungen dieser Erklärung
+
+Wir können diese Erklärung anpassen, während sich die App weiterentwickelt. Wesentliche Änderungen werden in der App angekündigt und im Datum „Zuletzt aktualisiert" oben auf dieser Seite festgehalten.
+
+10. Kontakt
+
+Datenschutzfragen: stack@gmail.com
+Anschrift des Betreibers: Enes Koc, Esslingen, Deutschland.
